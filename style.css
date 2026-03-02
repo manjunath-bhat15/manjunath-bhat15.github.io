@@ -109,6 +109,85 @@ h2 { border-bottom: 3px solid var(--primary); display: inline-block; margin-bott
     box-shadow: var(--shadow);
 }
 
+/* --- Certificates Section --- */
+.certificates {
+    padding: 60px 0;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.cert-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border-top: 4px solid var(--primary);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensures all cards in a row are same height */
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.cert-info h3 { 
+    color: var(--dark); 
+    margin-bottom: 12px; 
+    font-size: 1.15rem;
+    line-height: 1.4;
+}
+
+.cert-issuer { 
+    color: var(--text); 
+    font-weight: 600; 
+    font-size: 0.95rem; 
+    margin-bottom: 8px; 
+}
+
+.cert-issuer i, .cert-date i {
+    margin-right: 8px;
+    color: var(--primary);
+    width: 18px; /* Fixed width keeps text aligned */
+}
+
+.cert-date { 
+    font-size: 0.85rem; 
+    color: var(--gray); 
+    margin-bottom: 20px; 
+}
+
+.cert-link {
+    font-size: 0.9rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: #eff6ff; /* Light blue background for the 'button' feel */
+    border-radius: 6px;
+    width: fit-content;
+    transition: 0.2s;
+}
+
+.cert-link:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.cert-link i {
+    font-size: 1rem;
+}
 /* Footer */
 footer {
     background: var(--dark);
