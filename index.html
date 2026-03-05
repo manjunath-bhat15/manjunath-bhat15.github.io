@@ -1,180 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Manjunath Bhat | Portfolio</title>
-
-  <meta name="description"
-        content="Manjunath Bhat – Full Stack Developer skilled in Spring Boot, React, Microservices, and ML projects." />
-
-  <link rel="stylesheet" href="./style.css" />
-
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    referrerpolicy="no-referrer"
-  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manjunath Bhat | Software Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="hero">
-  <div class="container">
-    <h1>Manjunath Bhat</h1>
-    <p>Full-Stack Developer | Spring Boot & React | ML Enthusiast</p>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="nav-name">Manjunath Bhat</a>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="./assets/Manjunath_Bhat.pdf" target="_blank" class="btn-resume">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="hero-links">
-      <a href="https://github.com/manjunath-bhat15" target="_blank" class="btn">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/manjunath-bhat-4615b826b/" target="_blank" class="btn">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
+    <header class="hero">
+    <div class="container hero-grid">
+        <div class="hero-text">
+            
+            <h1>Hello, I'm <span class="text-accent">Manjunath.</span></h1>
+            <p>
+                I am a <strong>Computer Science and Design</strong> graduate with a passion for 
+                engineering scalable backend systems and crafting seamless user experiences. 
+                Equipped with a strong foundation in full-stack development and machine learning, 
+                I focus on writing clean, efficient code to solve real-world challenges.
+            </p>
+            <br>
+            <div class="hero-cta">
+                <a href="https://github.com/manjunath-bhat15" target="_blank" class="social-icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/manjunath-bhat-4615b826b/" target="_blank" class="social-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:manjunathbhat.official@gmail.com" class="social-icon" title="Email">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-wrapper">
+                <img src="./assets/myphoto.jpg" alt="Manjunath Bhat" onerror="this.src='https://via.placeholder.com/400'">
+            </div>
+        </div>
     </div>
-  </div>
 </header>
 
-<main class="container">
+    <main>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-heading">Featured Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="./assets/Rentlytools.png" alt="RentlyTools">
+                        </div>
+                        <div class="project-info">
+                            <h3>RentlyTools</h3>
+                            <p>Peer-to-peer equipment rental platform with a structured booking workflow.</p>
+                            <div class="tags">
+                                <span>Spring Boot</span><span>React</span><span>MySQL</span>
+                            </div>
+                            <a href="https://github.com/manjunath-bhat15/RentlyTools" target="_blank" class="project-link">View Code →</a>
+                        </div>
+                    </div>
 
-<section class="about">
-  <h2>About Me</h2>
-  <p>
-    Computer Science graduate focused on building scalable web applications.
-    I specialize in <strong>Spring Boot microservices</strong> and
-    <strong>React-based frontends</strong>, with hands-on ML deployment experience.
-  </p>
-</section>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="./assets/Bodyfat.png" alt="BodyFat Intelligence">
+                        </div>
+                        <div class="project-info">
+                            <h3>BodyFat Intelligence</h3>
+                            <p>ML application predicting body fat percentage using health metrics.</p>
+                            <div class="tags">
+                                <span>Python</span><span>Scikit-learn</span><span>Gradio</span>
+                            </div>
+                            <a href="https://huggingface.co/spaces/manjunathbhat/BodyFat_Intelligence" target="_blank" class="project-link">View Demo →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section class="projects">
-  <h2>Featured Projects</h2>
+        <section id="skills" class="section bg-light">
+            <div class="container">
+                <h2 class="section-heading">Technical Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-box">
+                        <i class="fas fa-server"></i>
+                        <h4>Backend</h4>
+                        <p>Java, Spring Boot, REST APIs, MySQL</p>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fas fa-code"></i>
+                        <h4>Frontend</h4>
+                        <p>React.js, JavaScript, HTML5, CSS3</p>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fas fa-brain"></i>
+                        <h4>ML & Data</h4>
+                        <p>Python, Scikit-learn, Pandas, NumPy</p>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fas fa-layer-group"></i>
+                        <h4>Tools</h4>
+                        <p>Git, Docker, Postman, CI/CD</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <div class="projects-grid">
-
-    <!-- RentlyTools -->
-    <div class="project-card">
-      <div class="project-image">
-        <img
-          src="./assets/Rentlytools.png"
-          alt="RentlyTools – Tool Rental Platform"
-          loading="lazy"
-        />
-      </div>
-
-      <div class="project-info">
-        <h3>RentlyTools</h3>
-        <p>
-          A microservices-based tool rental platform featuring JWT authentication,
-          role-based access, and Dockerized services.
-        </p>
-
-        <div class="tags">
-          <span>Spring Boot</span>
-          <span>React</span>
-          <span>MySQL</span>
-          <span>Docker</span>
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-headline">
+                    <h2>Reach Out</h2>
+                    <p>I am available for software engineering roles and collaborations.</p>
+                </div>
+                
+                <div class="contact-list">
+                    <a href="mailto:manjunathbhat.official@gmail.com" class="contact-item">
+                        <i class="far fa-envelope"></i>
+                        <span>manjunathbhat.official@gmail.com</span>
+                    </a>
+                    <a href="tel:+918105324597" class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 8105324597</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/manjunath-bhat-4615b826b/" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Manjunath Bhat</p>
+            </div>
         </div>
-
-        <div class="project-links">
-          <a href="https://github.com/manjunath-bhat15/RentlyTools" target="_blank">
-            View Code
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- BodyFat Intelligence -->
-    <div class="project-card">
-      <div class="project-image">
-        <img
-          src="./assets/Bodyfat.png"
-          alt="BodyFat Intelligence – ML Prediction App"
-          loading="lazy"
-        />
-      </div>
-
-      <div class="project-info">
-        <h3>BodyFat Intelligence</h3>
-        <p>
-          Machine learning application that predicts body fat percentage,
-          deployed using Streamlit and Hugging Face Spaces.
-        </p>
-
-        <div class="tags">
-          <span>Python</span>
-          <span>Scikit-learn</span>
-          <span>Streamlit</span>
-        </div>
-
-        <div class="project-links">
-          <a href="https://huggingface.co/spaces/manjunathbhat/BodyFat_Intelligence" target="_blank">
-            Live Demo
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="skills">
-  <h2>Technical Skills</h2>
-
-  <div class="skills-grid">
-    <div class="skill-category">
-      <h3>Backend</h3>
-      <p>Java, Spring Boot, Spring Security, JWT, Microservices, MySQL</p>
-    </div>
-
-    <div class="skill-category">
-      <h3>Frontend & ML</h3>
-      <p>React, CSS3, Python, Scikit-learn, Streamlit</p>
-    </div>
-
-    <div class="skill-category">
-      <h3>DevOps</h3>
-      <p>Git, GitHub, Docker, CI/CD basics, Hugging Face</p>
-    </div>
-  </div>
-</section>
-
-
-<section class="certificates">
-  <h2>My Certificates</h2>
-  <div class="certificates-grid">
-    
-    <div class="cert-card">
-      <div class="cert-info">
-        <h3>The Complete Full-Stack Web Development Bootcamp</h3>
-        <p class="cert-issuer"><i class="fas fa-university"></i> Udemy / Dr. Angela Yu</p>
-        <p class="cert-date"><i class="far fa-calendar-alt"></i> Issued 2025</p>
-      </div>
-      <a href="./assets/Udemy_fullstack_certificate.pdf" target="_blank" class="cert-link">
-        View Certificate <i class="fas fa-file-pdf"></i>
-      </a>
-    </div>
-
-    </div>
-</section>
-</main>
-
-<footer class="contact">
-  <div class="container">
-    <h2>Connect With Me</h2>
-
-    <div class="contact-links">
-      <a href="mailto:manjunathbhat.official@gmail.com">
-        <i class="fas fa-envelope"></i> Email
-      </a>
-      <a href="tel:+918105324597">
-        <i class="fas fa-phone"></i> Contact
-      </a>
-    </div>
-
-    <p>© 2026 Manjunath Bhat</p>
-  </div>
-</footer>
+    </footer>
 
 </body>
 </html>
